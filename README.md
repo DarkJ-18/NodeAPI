@@ -1,4 +1,4 @@
-# ProyectO Node con API
+# Proyecto Node con API
 
 ## Descripción
 
