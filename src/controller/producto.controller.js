@@ -5,8 +5,9 @@ exports.consultar = async (req, res) => {
     try {
         let listaProductos = await modeloProducto.find({});
         console.log(listaProductos);
-        if (listaProductos.length > 0) {
-            res.json(listaProductos);
+        if (listaProductos) {
+            //res.json(listaProductos);
+            res.render('pages/index', {listaProductos})
         } else {
             res.json({error: 'No hay productos en la base de datos'});
         }
